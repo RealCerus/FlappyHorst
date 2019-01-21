@@ -3,6 +3,9 @@ Ein simples, auf Flappy Bird basierendes Spiel, welches dem Charakter "Horst Flo
 
 ## Steuerung
 SPACE | Linke Maustaste | Rechte Maustaste - Springen
+
 ESCAPE - Pause
+
 F3 - Debug
+
 ? - Easteregg :D
