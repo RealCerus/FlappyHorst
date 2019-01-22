@@ -10,14 +10,14 @@ import java.io.File;
 
 public class DesktopLauncher {
 	public static void main (String[] arg) {
-		File installationPath = null;
+        File installationPath;
 		try {
 			installationPath = new File(System.getenv("ProgramFiles(X86)")+"\\Cerus\\Flappy Horst");
 			installationPath.exists();
 		} catch (NullPointerException ignored){
 			installationPath = new File(System.getenv("ProgramFiles")+"\\Cerus\\Flappy Horst");
 		}
-		if(installationPath == null || !installationPath.exists()){
+        if (!installationPath.exists()) {
 			JOptionPane.showMessageDialog(null, "Directory could not be found, please check your installation.", "Installation directory not found", JOptionPane.ERROR_MESSAGE);
 			System.exit(0);
 			return;
