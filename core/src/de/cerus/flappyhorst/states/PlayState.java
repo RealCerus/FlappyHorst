@@ -174,7 +174,8 @@ public class PlayState extends State {
     @Override
     public void dispose() {
         horst.dispose();
-        obstacles.forEach(Obstacle::dispose);
+        for(Obstacle obstacle : obstacles)
+            obstacle.dispose();
         stage.dispose();
     }
 }
