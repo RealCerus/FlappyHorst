@@ -29,7 +29,6 @@ public class SettingsState extends State {
 
     @Override
     protected void handleInput() {
-
     }
 
     @Override

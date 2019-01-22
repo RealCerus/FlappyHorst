@@ -24,6 +24,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 
 import java.awt.*;
 import java.io.IOException;
@@ -33,6 +34,7 @@ public class MenuState extends State {
     private Texture background, playButton;
     private BitmapFont font;
     private Desktop desktop;
+    private ShapeRenderer renderer;
 
     public MenuState(StateManager stateManager) {
         super(stateManager);
@@ -40,10 +42,13 @@ public class MenuState extends State {
         playButton = new Texture(Gdx.files.classpath("play_button.png"));
         font = new BitmapFont();
         desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
+        renderer = new ShapeRenderer();
+        camera.setToOrtho(false, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
     }
 
     @Override
     public void render(SpriteBatch spriteBatch) {
+        spriteBatch.setProjectionMatrix(camera.combined);
         spriteBatch.begin();
         spriteBatch.draw(background, 0, 0);
         spriteBatch.draw(playButton, (Gdx.graphics.getWidth()/2f)-(playButton.getWidth()/2f), Gdx.graphics.getHeight()/2f);
@@ -51,10 +56,11 @@ public class MenuState extends State {
         font.draw(spriteBatch, "Leertaste / linke & rechte Maustaste - Springen", 10, 460);
         font.draw(spriteBatch, "Escape - Pause", 10, 445);
         font.draw(spriteBatch, "F3  - Debug", 10, 430);
+        font.draw(spriteBatch, "F2  - Screenshot", 10, 415);
 
-        font.draw(spriteBatch, "Version 1.0 SNAPSHOT", 10, -200);
-        font.draw(spriteBatch, "Made by Cerus", 10, -210);
-        font.draw(spriteBatch, "Sourcecode available at GitHub", 10, -220);
+        font.draw(spriteBatch, "Version 1.0 SNAPSHOT", 10, 70);
+        font.draw(spriteBatch, "Made by Cerus", 10, 55);
+        font.draw(spriteBatch, "Sourcecode available at GitHub (Click here)", 10, 40);
         spriteBatch.end();
     }
 
@@ -68,17 +74,16 @@ public class MenuState extends State {
         if(Gdx.input.justTouched()){
             float x = Gdx.input.getX();
             float y = Gdx.input.getY();
-            if(y <= 225 && x >= 10 && x <= 30 && desktop != null){
+            if (y >= 440 && y <= 450 && x >= 5 && x <= 300 && desktop != null) {
                 try {
-                    desktop.browse(new java.net.URL("").toURI());
+                    desktop.browse(new java.net.URL("https://github.com/RealCerus/FlappyHorst").toURI());
                 } catch (IOException e) {
                     e.printStackTrace();
                 } catch (URISyntaxException e) {
                     e.printStackTrace();
                 }
                 return;
-            }
-            stateManager.set(new PlayState(stateManager));
+            } else stateManager.set(new PlayState(stateManager));
         }
     }
 

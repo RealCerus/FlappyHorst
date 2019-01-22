@@ -85,9 +85,12 @@ public class Obstacle {
         return bottomObstaclePosition;
     }
 
-    public void reposition(float x){
+    public void reposition(float x) {
         topObstaclePosition.set(x, random.nextInt(FLUCTUATION) + GAP + LOWEST_OPENING);
         bottomObstaclePosition.set(x, topObstaclePosition.y - GAP - getScaledBottomHeight());
+        topObstacleHitbox.set(topObstaclePosition.x, topObstaclePosition.y, getScaledTopWidth(), getScaledTopHeight());
+        bottomObstacleHitbox.set(bottomObstaclePosition.x, bottomObstaclePosition.y, getScaledBottomWidth(), getScaledBottomHeight());
+        spaceHitbox.set(bottomObstaclePosition.x, bottomObstaclePosition.y, topObstacleHitbox.width, Gdx.graphics.getHeight());
     }
 
     public Rectangle getBottomObstacleHitbox() {
@@ -98,11 +101,11 @@ public class Obstacle {
         return topObstacleHitbox;
     }
 
-    public boolean collidesWith(Rectangle rectangle){
+    public boolean collidesWith(Rectangle rectangle) {
         return rectangle.overlaps(topObstacleHitbox) || rectangle.overlaps(bottomObstacleHitbox);
     }
 
-    public void dispose(){
+    public void dispose() {
         this.bottomObstacleTexture.dispose();
         this.topObstacleTexture.dispose();
     }
