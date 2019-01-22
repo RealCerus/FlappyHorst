@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>C:\Users\Maximilian\Desktop\IntelliJ\Workspace\FlappyHorst\desktop\build\libs\desktop-1.0-SNAPSHOT.jar</jar>
+  <outfile>C:\Users\Maximilian\Desktop\IntelliJ\Workspace\FlappyHorst\export\FlappyHorst.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl>https://discordapp.com/invite/HEy3MP4</supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon>C:\Users\Maximilian\Desktop\IntelliJ\Workspace\FlappyHorst\classes\artifacts\FlappyHorst_jar\icon.ico</icon>
+  <jre>
+    <path></path>
+    <bundledJre64Bit>false</bundledJre64Bit>
+    <bundledJreAsFallback>false</bundledJreAsFallback>
+    <minVersion>8</minVersion>
+    <maxVersion>12</maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <runtimeBits>64/32</runtimeBits>
+  </jre>
+  <versionInfo>
+    <fileVersion>1.0.0.0</fileVersion>
+    <txtFileVersion>1.0-SNAPSHOT</txtFileVersion>
+    <fileDescription>FlappyHorst Game</fileDescription>
+    <copyright>Cerus</copyright>
+    <productVersion>1.0.0.0</productVersion>
+    <txtProductVersion>1.0-SNAPSHOT</txtProductVersion>
+    <productName>FlappyHorst</productName>
+    <companyName></companyName>
+    <internalName>Flappy Horst</internalName>
+    <originalFilename>FlappyHorst.exe</originalFilename>
+    <trademarks></trademarks>
+    <language>GERMAN</language>
+  </versionInfo>
+</launch4jConfig>

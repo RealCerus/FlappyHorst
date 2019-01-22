@@ -1,6 +1,5 @@
 apply plugin: "java"
 
-sourceCompatibility = 1.6
 sourceSets.main.java.srcDirs = [ "src/" ]
 
 project.ext.mainClassName = "de.cerus.flappyhorst.desktop.DesktopLauncher"
@@ -53,3 +52,6 @@ task afterEclipseImport(description: "Post processing after project generation",
     printer.print(classpath)
   }
 }
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FlappyHorst.iml" filepath="$PROJECT_DIR$/FlappyHorst.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/FlappyHorst.core.iml" filepath="$PROJECT_DIR$/.idea/modules/core/FlappyHorst.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/FlappyHorst.core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/core/FlappyHorst.core.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/FlappyHorst.core.test.iml" filepath="$PROJECT_DIR$/.idea/modules/core/FlappyHorst.core.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/desktop/FlappyHorst.desktop.iml" filepath="$PROJECT_DIR$/.idea/modules/desktop/FlappyHorst.desktop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/desktop/FlappyHorst.desktop.main.iml" filepath="$PROJECT_DIR$/.idea/modules/desktop/FlappyHorst.desktop.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/desktop/FlappyHorst.desktop.test.iml" filepath="$PROJECT_DIR$/.idea/modules/desktop/FlappyHorst.desktop.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FlappyHorst.main.iml" filepath="$PROJECT_DIR$/.idea/modules/FlappyHorst.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FlappyHorst.test.iml" filepath="$PROJECT_DIR$/.idea/modules/FlappyHorst.test.iml" />
+    </modules>
+  </component>
+</project>
