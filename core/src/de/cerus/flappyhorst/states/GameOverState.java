@@ -51,7 +51,6 @@ public class GameOverState extends State {
         font.draw(spriteBatch, gameOverLayout, (camera.viewportWidth - gameOverLayout.width) / 2, camera.viewportHeight / 2);
         font.draw(spriteBatch, clickToRestartLayout, (camera.viewportWidth - clickToRestartLayout.width) / 2, camera.viewportHeight / 3);
 
-        font.draw(spriteBatch, "Daniel war hier", gameOverLayout.width - 20, gameOverLayout.height - 20);
         spriteBatch.end();
     }
 
