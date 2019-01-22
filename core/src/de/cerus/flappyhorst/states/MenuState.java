@@ -59,7 +59,7 @@ public class MenuState extends State {
         font.draw(spriteBatch, "F2  - Screenshot", 10, 415);
 
         font.draw(spriteBatch, "Version 1.0 SNAPSHOT", 10, 70);
-        font.draw(spriteBatch, "Made by Cerus", 10, 55);
+        font.draw(spriteBatch, "Made by Cerus with help from Lukaesebrot", 10, 55);
         font.draw(spriteBatch, "Sourcecode available at GitHub (Click here)", 10, 40);
         spriteBatch.end();
     }
