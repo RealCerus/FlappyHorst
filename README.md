@@ -1,6 +1,8 @@
 # FlappyHorst
 Ein simples, auf Flappy Bird basierendes Spiel, welches dem Charakter "Horst Flock" gewidmet ist.
 
+![GitHub All Releases](https://img.shields.io/github/downloads/RealCerus/FlappyHorst/total.svg?style=for-the-badge)
+
 ## Steuerung
 SPACE | Linke Maustaste | Rechte Maustaste - Springen
 
